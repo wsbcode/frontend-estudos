@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Se você quiser que o fundo da tela seja sempre escuro ou 
+   tenha uma cor padrão sem precisar colocar em toda Page, 
+   pode adicionar isso abaixo, mas é opcional: 
+*/
