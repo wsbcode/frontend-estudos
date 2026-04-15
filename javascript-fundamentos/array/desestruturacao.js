@@ -1,7 +1,7 @@
 //APREENDO SOBRE (desestruturação)
 //
 // 1. Criamos um array (lista) com 4 strings guardadas na variável 'info'.
-let info = ["William Barbosa", "InstaWilliam@", "William", "Barbosa"];
+let info = ["William Barbosa", "InstaWilliam@", "William", "Barbosa", "wsb92"];
 
 // 2. Desestruturação: Criamos 4 variáveis novas [a, b, c, d].
 // O JavaScript olha para a lista 'info' e entrega:
