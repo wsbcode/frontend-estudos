@@ -77,7 +77,5 @@ Este repositório é voltado para **estudos e prática**, portanto pode conter c
 * Trabalhar com APIs
 * Integrar frontend com backend
 
----
 
-✍️ Desenvolvido por você durante sua jornada de aprendizado
 
