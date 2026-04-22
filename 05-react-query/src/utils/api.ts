@@ -1,7 +1,7 @@
 // 1. Importamos o Axios e os "Moldes" (Types) dos dados
 import axios from "axios";
-import { Post } from "../types/Post";
-import { User } from "../types/User";
+import type { Post } from "../types/Post";
+import type { User } from "../types/User";
 
 // 2. Criamos uma INSTÂNCIA do Axios.
 // Isso evita que você tenha que digitar a URL inteira em toda função.
