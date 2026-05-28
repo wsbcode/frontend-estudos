@@ -45,3 +45,17 @@ switch (corDoSemaforo) {
       console.log("Cor inválida no semáforo.");
       break;
 }
+
+// ==========================================
+// 3. Condicional Ternário (PERGUNTA ? seSim : seNao;)
+// ==========================================
+
+// verifica se o usuário está logado
+let logado = true;
+
+// se logado for true -> "Bem-vindo"
+// se logado for false -> "Faça login"
+let mensagem = logado ? "Bem-vindo" : "Faça login";
+
+// exibe mensagem
+console.log(mensagem);
