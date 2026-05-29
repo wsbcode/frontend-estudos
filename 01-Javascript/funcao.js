@@ -120,3 +120,11 @@ let campoDigitadoPeloUsuario = 10;
 let resultadoFinal = dobrando(campoDigitadoPeloUsuario);
 
 console.log(resultadoFinal); // Mostra no terminal: 20
+
+function testando(nome, idade) {
+   return `Nome: ${nome} Idade:${idade}`;
+}
+
+let nick = testando("William", 1990);
+
+console.log(nick);
