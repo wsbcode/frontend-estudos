@@ -93,12 +93,12 @@ console.log(resultado);
 //Forma moderna de criar função.
 
 // cria função
-const saudar = (nome) => {
+const saudarcao = (nome) => {
    console.log("Olá " + nome);
 };
 
 // executa função
-saudar("William");
+saudarcao("William");
 
 // Forma curta da arrow function
 
@@ -106,3 +106,17 @@ saudar("William");
 const dobrar = (numero) => numero * 2;
 
 console.log(dobrar(10));
+
+// exemplo com usuario digitando valor
+
+// 1. A sua função que dobra o número (ela fica esperando um valor chegar)
+const dobrando = (numero) => numero * 2;
+
+// 2. Simulando o que o usuário digitou em um campo de texto do site
+// (Imagine que ele digitou "10" na caixinha do site e o JavaScript guardou aqui)
+let campoDigitadoPeloUsuario = 10;
+
+// 3. O JavaScript pega o que estava no campo e joga para dentro da função
+let resultadoFinal = dobrando(campoDigitadoPeloUsuario);
+
+console.log(resultadoFinal); // Mostra no terminal: 20
