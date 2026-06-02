@@ -16,6 +16,42 @@ if (notaDoAluno >= 7) {
    console.log("Ops, você ficou de recuperação.");
 }
 
+// EX 2
+
+// ==========================================
+// 1. Definição da Função
+// ==========================================
+// Criamos uma função que recebe uma "idade" como parâmetro (entrada)
+function maiorDeIdade(idade) {
+   // O 'if' testa se a idade recebida é maior ou igual a 18
+   if (idade >= 18) {
+      return true; // Se for maior ou igual a 18, devolve (retorna) verdadeiro
+   } else {
+      return false; // Se não for, devolve (retorna) falso
+   }
+}
+
+// ==========================================
+// 2. Uso da Função e Armazenamento
+// ==========================================
+// Criamos uma variável com o valor 33
+let idade = 33;
+
+// Chamamos a função passando o número 33. O resultado dela (true)
+// vai ser guardado direto dentro da variável 'verificandoIdade'
+let verificandoIdade = maiorDeIdade(idade);
+
+// ==========================================
+// 3. Tomada de Decisão com o Resultado
+// ==========================================
+// O 'if' verifica o que está guardado em 'verificandoIdade' (que é true)
+if (verificandoIdade) {
+   // Como é verdadeiro (true), o JavaScript executa esta linha:
+   console.log(`Idade: ${idade} , voce de maior`);
+} else {
+   // Se o resultado fosse falso (false), executaria esta linha:
+   console.log(`Idade:${idade} , voce é de menor`);
+}
 // ==========================================
 // 2. EXEMPLO COM SWITCH (Escolha um caso)
 // ==========================================
