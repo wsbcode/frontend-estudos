@@ -111,4 +111,3 @@ alunos.sort((a, b) => {
 
 // Mostra o resultado final no terminal
 console.log(alunos);
-console.log(alunos);
