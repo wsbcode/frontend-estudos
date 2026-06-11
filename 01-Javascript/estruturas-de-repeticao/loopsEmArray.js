@@ -33,3 +33,14 @@ for (let nome of nomes) {
    // Exibe o nome atual diretamente no terminal
    console.log(nome);
 }
+
+// Criamos um array com algumas frutas
+let frutas = ["maçã", "banana", "laranja", "uva"];
+
+// Percorremos o array usando forEach.
+// forEach recebe uma função de callback que será chamada
+// para cada item do array, recebendo o item atual como argumento.
+frutas.forEach((fruta) => {
+   // A cada iteração exibimos a fruta atual no console
+   console.log(fruta);
+});
