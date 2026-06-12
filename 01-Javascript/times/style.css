@@ -1,0 +1,10 @@
+body {
+   background-color: black;
+   color: white;
+}
+.aviso {
+   display: none;
+   border: 2px solid white;
+   background-color: green;
+   padding: 10px;
+}
