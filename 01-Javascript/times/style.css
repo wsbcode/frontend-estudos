@@ -8,3 +8,11 @@ body {
    background-color: green;
    padding: 10px;
 }
+
+button {
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: blanchedalmond;
+}
