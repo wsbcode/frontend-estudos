@@ -21,23 +21,21 @@ function darCerto() {
    });
 }
 
-let button = document.querySelector("button").addEventListener("click", () => {
-   // Executando a Promise
-   darCerto()
-      .then((success) => {
-         // Se der certo (fulfilled)
-         console.log(success);
-         let teste = document.querySelector("#texto");
-         teste.innerText = "deu certo";
-      })
-      .catch((error) => {
-         // Se der erro (rejected)
-         console.log(error);
-         let teste = document.querySelector("#texto");
-         teste.innerText = "Deu errado";
-      })
-      .finally(() => {
-         // Executa sempre, no final
-         console.log("Finalizando...");
-      });
-});
+// Executando a Promise
+darCerto()
+   .then((success) => {
+      // Se der certo (fulfilled)
+      console.log(success);
+      let teste = document.querySelector("#texto");
+      teste.innerText = "deu certo";
+   })
+   .catch((error) => {
+      // Se der erro (rejected)
+      console.log(error);
+      let teste = document.querySelector("#texto");
+      teste.innerText = "Deu errado";
+   })
+   .finally(() => {
+      // Executa sempre, no final
+      console.log("Finalizando...");
+   });
