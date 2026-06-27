@@ -30,3 +30,22 @@ function searchUser(username) {
 botao.addEventListener("click", () => {
    searchUser("wsbcode");
 });
+
+// Trabalhando com código Assíncrono usando Async / Await
+//async/await: Promises com cara de código síncrono
+
+let botao2 = document.querySelector("#button2");
+
+async function searchLogin(userlogin) {
+   let res = await fetch(`https://api.github.com/users/${userlogin}`);
+   let dados = await res.json();
+   if (dados.login) {
+      document.querySelector("#resposta2").innerText = dados.login;
+      document.querySelector("#imagem").setAttribute("src", dados.avatar_url);
+      document.querySelector("#imagem").setAttribute("alt", dados.name);
+   }
+}
+
+botao2.addEventListener("click", () => {
+   searchLogin("wsbcode");
+});
