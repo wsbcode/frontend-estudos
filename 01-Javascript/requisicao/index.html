@@ -5,12 +5,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
    </head>
+   <link rel="stylesheet" href="style.css" />
    <body>
       <button id="button">Requisição</button>
       <div id="resposta"></div>
       <button id="button2">Rec async/await</button>
       <div id="resposta2"></div>
       <img src="" alt="" id="imagem" />
+      <!--Modal de error-->
+      <div id="meuModal" class="modal">
+         <div class="modal-conteudo">
+            <h2>⚠️ Erro!</h2>
+            <p id="mensagemModal">Usuário não encontrado!</p>
+            <button id="btnError">Fechar</button>
+         </div>
+      </div>
       <script src="script.js"></script>
    </body>
 </html>
