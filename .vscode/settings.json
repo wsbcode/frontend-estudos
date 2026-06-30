@@ -10,8 +10,10 @@
       "profissao",
       "saudarcao",
       "Semaforo",
+      "userlogin",
       "usuario",
       "Usuario",
-      "Usuarios"
+      "Usuarios",
+      "wsbcode"
    ]
 }

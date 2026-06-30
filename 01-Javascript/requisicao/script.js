@@ -47,9 +47,15 @@ async function searchLogin(userlogin) {
       // Faz a requisição para a API
       let res = await fetch(`https://api.github.com/users/${userlogin}`);
 
+      // Se o erro for, por usuario não existente
+      if (res.status === 404) {
+         document.querySelector("#resposta2").innerText = "Usuário não encontrado";
+         return;
+      }
+
       // Se o status não for 200 (ex: 404), força erro e pula direto pro catch
       if (!res.ok) {
-         throw new Error("Usuário não encontrado");
+         throw new Error("Erro ao acessar a API");
       }
 
       // Converte a resposta para JSON
