@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Buscador de Repositórios no GitHub</title>
+      <link rel="stylesheet" href="assets/style.css" />
+   </head>
+   <body>
+      <main class="app">
+         <section class="search-card" aria-label="Busca de repositórios">
+            <h1>Buscar repositórios no GitHub</h1>
+            <p>Digite um termo e pressione Enter para ver os resultados.</p>
+
+            <label class="search-field" for="search-input">
+               <span class="sr-only">Termo de busca</span>
+               <input
+                  id="search-input"
+                  type="text"
+                  placeholder="Ex.: react, javascript, api"
+                  autocomplete="off"
+               />
+            </label>
+
+            <p class="hint">A busca é acionada somente ao pressionar Enter.</p>
+         </section>
+
+         <section class="results-card" aria-live="polite" aria-label="Resultados da busca">
+            <div id="status-message" class="status-message"></div>
+            <div id="results" class="results-list"></div>
+         </section>
+      </main>
+
+      <script src="assets/script.js"></script>
+   </body>
+</html>
